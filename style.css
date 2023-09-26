@@ -22,16 +22,17 @@ body {
     height: 220px;
     display: flex;
     align-items: flex-end;
-    justify-content: end;
+    justify-content: space-around;
     
 }
 
 .footbar {
-    width: 870px;
-    height: 90px;
-    background-image: url('img/Vector\ 22.png');
-    margin-bottom: 20px;
-    margin-right: 9rem;
+    position: relative;
+    right: 60px;
+    bottom: 25px;
+    width: 1310px;
+    height: 110px;
+    background-image: url('img/Frame\ 3.png')
 }
 
 .footbar ul {
@@ -42,10 +43,21 @@ body {
 
 .footbar ul li {
     list-style-type: none;
-    padding: 20px 25px;
+    padding: 30px 30px;
+    position: relative;
+    left: 100px;
 }
 
 .footbar ul li a {
     text-decoration: none;
     color: #00E6FB;
+    font-size: 20px;
 }
+
+.circle {
+    width: 230px;
+    height: 220px;
+    background-image: url(img/lingkaran.png);
+    animation: alternate;
+}
+
