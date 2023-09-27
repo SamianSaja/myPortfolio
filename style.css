@@ -12,9 +12,18 @@ body {
 }
 
 .halUtama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1690px;
     height: 700px;
     background-image: url('img/containerUtama.png');
+}
+
+.halUtama h1 {
+    font-size: 60px;
+    color: white;
+    text-transform: capitalize;
 }
 
 .bottom {
@@ -22,7 +31,7 @@ body {
     height: 220px;
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
 
@@ -55,9 +64,54 @@ body {
 }
 
 .circle {
-    width: 230px;
-    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 234.7px;
+    height: 234.7px;
+    border-radius: 50%;
     background-image: url(img/lingkaran.png);
-    animation: alternate;
+    -webkit-animation: 1s gear-rotate linear infinite;
+    -moz-animation: 1s gear-rotate linear infinite;
+    animation: 1s gear-rotate linear infinite;
+  
 }
 
+.circle:hover {
+    animation: paused;
+}
+
+/* .mid-circle {
+    width: 60px;
+    height: 60px;
+    border: 20px solid #00E6FB;
+    border-radius: 50%;
+} */
+
+
+@-webkit-keyframes gear-rotate {
+    0% { 
+      -webkit-transform: rotate(0deg);
+    }
+    100% { 
+      -webkit-transform: rotate(-360deg); 
+    }
+  }
+  
+  @-moz-keyframes gear-rotate {
+    0% { 
+      transform: rotate(0deg);
+    }
+    100% { 
+      transform: rotate(-360deg); 
+    }
+  }
+  
+  @keyframes gear-rotate {
+    0% { 
+      transform: rotate(0deg); 
+    }
+    100% { 
+      transform: rotate(-360deg); 
+    }
+  }
