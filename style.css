@@ -20,11 +20,119 @@ body {
     background-image: url('img/containerUtama.png');
 }
 
-.halUtama h1 {
-    font-size: 60px;
+/* halaman home */
+.content {
+    display: none;
+}
+
+#home {
+    display: block;
+    font-size: 45px;
     color: white;
     text-transform: capitalize;
 }
+
+/* halaman about */
+#about {
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 160px;
+    margin-left: 215px;
+    /* background-image: url(img/halAbout.png); */
+  
+}
+
+#about .foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/Vector\ 44.png);
+  width: 294px;
+  height: 275px;
+  position: relative;
+  top: 20px;
+}
+
+#about .foto img {
+  width: 290px;
+  height: 270px;
+  border-radius: 50px;
+}
+
+#about .desk {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url(img/Vector\ 45.png);
+  width: 866px;
+  height: 535px;
+  position: relative;
+  top: 30px;
+}
+
+#about .desk p {
+  color: white;
+  font-size: 26px;
+  margin: 30px 42px;
+}
+
+#about .skill {
+  background-image: url(img/Vector\ 46.png);
+  width: 307px;
+  height: 215px;
+  position: relative;
+  bottom: 20px;
+  right: 5px;
+}
+
+
+/* halaman Services */
+#services {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#services .item-service {
+  width: 23%;
+  height: 70%;
+  margin: 120px 20px;
+  border: 2px solid #00E6FB;
+  border-radius: 20px;
+}
+
+/* halaman my project */
+#my-project {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#my-project .item-project {
+  width: 23%;
+  height: 70%;
+  margin: 120px 20px;
+  border: 2px solid #00E6FB;
+  border-radius: 20px;
+}
+
+/* halaman contact */
+#contact {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .item-contact {
+  width: 80%;
+  height: 80%;
+  border: 1px solid #00E6FB;
+  border-radius: 20px;
+}
+
 
 .bottom {
     width: 100%;
