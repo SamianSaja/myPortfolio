@@ -319,6 +319,15 @@ body {
     font-size: 20px;
 }
 
+.footbar ul li a:hover {
+  color: white;
+  animation: hover-footbar 2s alternate;
+}
+
+.footbar ul li a:active {
+  color: white;
+}
+
 .circle {
     display: flex;
     justify-content: center;
