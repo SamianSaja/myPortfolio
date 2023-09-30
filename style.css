@@ -34,59 +34,42 @@ body {
 
 /* halaman about */
 #about {
-    grid-template-columns: auto auto auto;
-    width: 100%;
-    height: 100%;
-    margin-top: 160px;
-    margin-left: 215px;
-    /* background-image: url(img/halAbout.png); */
-  
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 #about .foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(img/Vector\ 44.png);
-  width: 294px;
-  height: 275px;
-  position: relative;
-  top: 20px;
+  width: 30%;
+  height: 75%;
+  margin: 60px;
 }
 
 #about .foto img {
-  width: 290px;
-  height: 270px;
-  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00E6FB;
+  border-radius: 20px;
 }
 
 #about .desk {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
   background-image: url(img/Vector\ 45.png);
   width: 866px;
   height: 535px;
-  position: relative;
-  top: 30px;
 }
 
 #about .desk p {
-  color: white;
+  color: #00E6FB;
   font-size: 26px;
   margin: 30px 42px;
 }
 
-#about .skill {
-  background-image: url(img/Vector\ 46.png);
-  width: 307px;
-  height: 215px;
-  position: relative;
-  bottom: 20px;
-  right: 5px;
+#about .ket li {
+  list-style-type: none;
+  color: white;
+  font-size: 18px;
 }
-
 
 /* halaman Services */
 #services {
@@ -103,6 +86,72 @@ body {
   border-radius: 20px;
 }
 
+.item-service .icon-service-container {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.item-service .icon-service-container .icon-service {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #00E6FB;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.item-service .icon-service-container .icon-service .circle-service {
+  width: 20px;
+  height: 20px;
+  background-color: #00E6FB;
+  border-radius: 50%;
+}
+
+.item-service h1 {
+  color: #00E6FB;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.item-service .desk-service {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #00E6FB;
+}
+
+.item-service .desk-service p {
+  color: #00E6FB;
+  padding: 20px;
+  text-align: center;
+  font-size: 12pt;
+}
+
+.item-service .foot-service {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.item-service .foot-service img {
+  width: 22px;
+  height: 22px;
+  margin: 30px 20px;
+}
+
+.item-service i {
+  color: #00E6FB;
+  margin: 30px 0px;
+}
+
+
 /* halaman my project */
 #my-project {
   justify-content: center;
@@ -118,6 +167,43 @@ body {
   border-radius: 20px;
 }
 
+.item-project img {
+  width: 100%;
+  height: 45%;
+  border-bottom: 2px solid #00E6FB;
+  border-radius: 20px;
+}
+
+.item-project h1 {
+  color: #00E6FB;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.item-project .container-submit {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-project .container-submit a {
+  text-decoration: none;
+}
+
+.item-project .container-submit .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 50px;
+  background-color: #00E6FB;
+  border-radius: 30px;
+  font-size: 14pt;
+  color: black;
+}
+
 /* halaman contact */
 #contact {
   width: 100%;
@@ -127,13 +213,75 @@ body {
 }
 
 #contact .item-contact {
-  width: 80%;
-  height: 80%;
-  border: 1px solid #00E6FB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  border: 2px solid #00E6FB;
   border-radius: 20px;
 }
 
+/* form kirim pesan */
+#contact .item-contact .form-container {
+  width: 40%;
+  height: 90%;
+  margin: 30px;
+}
 
+.form-container form input {
+  width: 90%;
+  height: 30px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16pt;
+  color: #00E6FB;
+  background-color: #030F2A;
+  border: 2px solid #00E6FB;
+}
+
+.form-container form textarea {
+  padding: 15px;
+  margin: 10px;
+  width: 90%;
+  height: 130px;
+  border-radius: 5px;
+  font-size: 16pt;
+  color: #00E6FB;
+  background-color: #030F2A;
+  border: 2px solid #00E6FB;
+}
+
+
+/* contact bagian medsos dan deskripsi tentang kontak */
+#contact .item-contact .medsos-container {
+  width: 40%;
+  height: 90%;
+  margin: 30px;
+  color: #00E6FB;
+  font-size: 16pt;
+}
+
+#contact .item-contact .medsos-container .sosmed {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#contact .item-contact .medsos-container .sosmed img {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 20%;
+}
+
+
+
+
+/* bagian bawah */
 .bottom {
     width: 100%;
     height: 220px;
@@ -179,9 +327,9 @@ body {
     height: 234.7px;
     border-radius: 50%;
     background-image: url(img/lingkaran.png);
-    -webkit-animation: 1s gear-rotate linear infinite;
-    -moz-animation: 1s gear-rotate linear infinite;
-    animation: 1s gear-rotate linear infinite;
+    -webkit-animation: 1.5s gear-rotate linear infinite;
+    -moz-animation: 1.5s gear-rotate linear infinite;
+    animation: 1.5s gear-rotate linear infinite;
   
 }
 

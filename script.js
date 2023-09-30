@@ -7,7 +7,7 @@ function showHome() {
 }
 
 function showAbout() {
-    document.getElementById('about').style.display = 'grid'
+    document.getElementById('about').style.display = 'flex'
     document.getElementById('home').style.display = 'none'
     document.getElementById('services').style.display = 'none'
     document.getElementById('my-project').style.display = 'none'
